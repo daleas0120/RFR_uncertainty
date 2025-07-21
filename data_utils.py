@@ -34,3 +34,11 @@ def get_target_label():
     X = data.iloc[sample_list].drop(axis=1, columns=target).values
     y = data.iloc[sample_list][target].values
     return X, y
+
+
+def dummy_function():
+    print("This is the dummy function")
+    if True:
+        return 0
+    else:
+        return -1
