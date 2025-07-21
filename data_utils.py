@@ -34,3 +34,20 @@ def get_target_label():
     X = data.iloc[sample_list].drop(axis=1, columns=target).values
     y = data.iloc[sample_list][target].values
     return X, y
+
+
+def dummy_function():
+    """
+    A placeholder function that demonstrates basic functionality.
+    
+    This function prints a message and returns a value based on a simple condition.
+    It is intended as a dummy example and does not perform any meaningful computation.
+    
+    Returns:
+        int: Always returns 0 since the condition is always True.
+    """
+    print("This is the dummy function")
+    if True:
+        return 0
+    else:
+        return -1
